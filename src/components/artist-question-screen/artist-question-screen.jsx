@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import artistQuestionProp from "./artist-question-prop";
 
 const ArtistQuestionScreen = (props) => {
-  const {onAnswer, question, renderPlayer} = props;
+  const {onAnswer, question, renderPlayer, children} = props;
   const {
     answers,
     song,
@@ -23,9 +23,7 @@ const ArtistQuestionScreen = (props) => {
         </svg>
 
         <div className="game__mistakes">
-          <div className="wrong" />
-          <div className="wrong" />
-          <div className="wrong" />
+          {children}
         </div>
       </header>
 
@@ -62,6 +60,7 @@ ArtistQuestionScreen.propTypes = {
   onAnswer: PropTypes.func.isRequired,
   question: artistQuestionProp,
   renderPlayer: PropTypes.func.isRequired,
+  children: PropTypes.element.isRequired,
 };
 
 export default ArtistQuestionScreen;
