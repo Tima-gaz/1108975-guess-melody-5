@@ -7,8 +7,8 @@ import {GameType} from '../../const';
 import ArtistQuestionScreen from '../artist-question-screen/artist-question-screen';
 import GenreQuestionScreen from '../genre-question-screen/genre-question-screen';
 import Mistakes from "../mistakes/mistakes";
-import artistQuestionProp from "../artist-question-screen/artist-question.prop";
-import genreQuestionProp from "../genre-question-screen/genre-question.prop";
+import artistQuestionProp from "../artist-question-screen/artist-question-prop";
+import genreQuestionProp from "../genre-question-screen/genre-question-prop";
 
 import withAudioPlayer from "../../hocs/with-audio-player/with-audio-player";
 
